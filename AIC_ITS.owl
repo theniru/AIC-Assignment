@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/AI"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2024/11/AI">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/11/AI/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AIModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplicationDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerVision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConvolutionalNN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvaluationMetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FeedForwardNN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachineLearningModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeuralNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OptimizationAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SearchAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupervisedLearning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainingData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnsupervisedLearning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evaluatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#trainedUsing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDatasetSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLayers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLearningRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CNN_Model1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accuracy"/>
+        <Class IRI="#EvaluationMetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <Class IRI="#ApplicationDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConvolutionalNN"/>
+        <Class IRI="#NeuralNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeedForwardNN"/>
+        <Class IRI="#NeuralNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachineLearningModel"/>
+        <Class IRI="#AIModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalLanguageProcessing"/>
+        <Class IRI="#ApplicationDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeuralNetwork"/>
+        <Class IRI="#AIModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OptimizationAlgorithm"/>
+        <Class IRI="#Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precision"/>
+        <Class IRI="#EvaluationMetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robotics"/>
+        <Class IRI="#ApplicationDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SearchAlgorithm"/>
+        <Class IRI="#Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupervisedLearning"/>
+        <Class IRI="#MachineLearningModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestData"/>
+        <Class IRI="#Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainingData"/>
+        <Class IRI="#Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnsupervisedLearning"/>
+        <Class IRI="#MachineLearningModel"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Accuracy"/>
+        <Class IRI="#Precision"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ComputerVision"/>
+        <Class IRI="#NaturalLanguageProcessing"/>
+        <Class IRI="#Robotics"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConvolutionalNN"/>
+        <Class IRI="#FeedForwardNN"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MachineLearningModel"/>
+        <Class IRI="#NeuralNetwork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OptimizationAlgorithm"/>
+        <Class IRI="#SearchAlgorithm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SupervisedLearning"/>
+        <Class IRI="#UnsupervisedLearning"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TestData"/>
+        <Class IRI="#TrainingData"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#EvaluationMetric"/>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NeuralNetwork"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrainingData"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MachineLearningModel"/>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MachineLearningModel"/>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#AccuracyMetric1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLayers"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLearningRate"/>
+        <NamedIndividual IRI="#CNN_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDatasetSize"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Dataset1_Training"/>
+        <Literal>Structured</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLearningRate"/>
+        <NamedIndividual IRI="#DecisionTree_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.92</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLearningRate"/>
+        <NamedIndividual IRI="#RandomForest_Model1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.01</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesAlgorithm"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#AIModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <Class IRI="#AIModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <Class IRI="#AIModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesAlgorithm"/>
+        <Class IRI="#AIModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesTo"/>
+        <Class IRI="#ApplicationDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evaluatedBy"/>
+        <Class IRI="#EvaluationMetric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#trainedUsing"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesAlgorithm"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAccuracy"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDatasetSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLayers"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLearningRate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Class IRI="#AIModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Class IRI="#EvaluationMetric"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLayers"/>
+        <Class IRI="#NeuralNetwork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLearningRate"/>
+        <Class IRI="#AIModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasType"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLayers"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLearningRate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
